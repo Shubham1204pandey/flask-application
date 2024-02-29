@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Word Count</title>
+  <link rel="stylesheet" type="text/css" href="../static/styles.css">
+  <script src="../static/script.js"></script>
+  
+</head>
+<body>
+  <h1>Word Count</h1>
+  <form action="/count" method="post">
+    <label class="f1" for="strings">Enter the strings:</label>
+    <textarea id="strings" name="strings" rows="4" cols="50"></textarea><br>
+    <label class="f1" for="tobefound">Enter the word to be found:</label>
+    <input type="text" id="tobefound" name="tobefound"><br><br>
+    <input type="submit" class="second" value="Count">
+  </form>
+  <center>
+  {% if count %}
+  <h1 style="color: salmon;">Shivam</h1>
+  <div class="card">
+  <p class="paragraph">{{ strings }}</p>
+  </div>
+  <p class="result">The occurrence of the word '{{ tobefound }}' is: {{ count }}</p>
+  {% endif %}
+</center>
+
+<button class="btn second">Button 2</button>
+
+
+</body>
+</html>

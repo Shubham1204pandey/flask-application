@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Kalam:wght@700&display=swap');
+* {
+	box-sizing: border-box;
+  margin: 0px;
+  padding:0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../static/back3.gif);
+    background-position: center;
+
+    background-attachment: fixed;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    color: #d9ff00;
+    animation: fade-in 1s ease-in-out;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-play-state: running;
+    animation-name: inherit;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0a070112;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #a91d22;
+    animation: slide-up 1s ease-in-out;
+  }
+
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  textarea,
+  input[type="text"]
+  {
+    width: 100%;
+    background-color: #008982;
+    color: rgb(250, 246, 246);
+    /* font-weight: bold; */
+    font-family: 'Concert One';
+    padding: 10px;
+    /* border: 1px solid #8c5e5e00; */
+    border-radius: 10px;
+  }
+  
+
+  .result{
+    font-size: 3rem;
+    color:brown
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 100%;
+    word-wrap: break-word;
+    color:#d9ff00;
+  }
+  .card {
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0); /* Adjust the opacity value (0.3) as desired */
+    backdrop-filter: blur(10px); /* Adjust the blur radius (10px) as desired */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(38, 0, 0, 0.663);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .col-btn {
+    max-width: 25%;
+    width: 100%;
+    padding: 0px 10px;
+    }
+
+  @media (max-width: 768px) {
+    .paragraph {
+      font-size: 14px;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(50px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+  
+  .f1{
+    font-size: 20px;
+    color: floralwhite;
+  }
+
+  /** this is only for button 
+**/
+input[type="submit"] {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border-radius: 0.6em;
+  color: #fa1900;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 10px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+input[type="submit"]:hover, input[type="submit"]:focus {
+  color: #690000;
+  outline: 0;
+}
+
+
+
+.second {
+  border-radius: 3em;
+  border-color: #a1dc00;
+  color: #fefe00;
+  background-image: linear-gradient(to left, rgba(145, 249, 0, 0.6), rgba(0, 135, 159, 0) 5%, #008982 5%, #01ffd0 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+  background-position: 0 0;
+  background-size: 100%;
+  transition: background 300ms ease-in-out;
+}
+.second:hover {
+  background-position: 10px;
+}
